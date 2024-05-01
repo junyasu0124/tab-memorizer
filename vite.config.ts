@@ -9,16 +9,23 @@ const manifest = defineManifest({
     128: "icons/icon-128.png",
   },
   version: "1.0.0",
+
+  permissions: ["storage", "tabs", "history", "scripting"],
+
   action: {
     default_icon: "icons/icon-128.png",
     default_title: "Tab Memorizer",
     default_popup: "src/popup/index.html",
   },
-  
-  background: {
-    service_worker: "src/background/index.ts",
+
+  options_ui: {
+    page: "src/page/index.html",
+    open_in_tab: true,
   },
-  permissions: ["storage", "tabs", "history", "scripting"],
+
+  background: {
+    service_worker: "src/background/script.ts",
+  },
 });
 
 export default defineConfig({
