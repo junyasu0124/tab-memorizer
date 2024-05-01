@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tab Memorizer</title>
-  </head>
 
-  <body>
-    <h1>Tab Memorizer</h1>
-    <div id="history"></div>
-    <script src="/src/popup/script.ts" type="module"></script>
-  </body>
+<head>
+  <title>Tab Memorizer</title>
+</head>
+
+<body>
+  <h1>Tab Memorizer</h1>
+  <button id="saveCurrentTab">Save this tab</button>
+  <button id="saveCurrentWindow">Save this window</button>
+  <button id="saveAllTabs">Save all tabs</button>
+  <button id="clearSaved">Clear saved data</button>
+
+  <div id="history"></div>
+  <script src="/src/popup/script.ts" type="module"></script>
+</body>
+
 </html>
